@@ -3,13 +3,16 @@
     internal class Program
     {
         static void Main(string[] args)
+               int startYear, endYear;
         {
-            // The algorithm in the Readme contains an error
-            // Rewrite the algorithm in C# bellow fixing the error
-            // Show the test outputs for the test table in the Readme
-            // Put your evidence where it says Do the coding task in C#
+            Console.Write("Enter the start year");
+            startYear = Convert.ToInt32(Console.ReadLine());
 
+            Console.Write("Enter the end year");
+            endYear = Convert.ToInt32(Console.ReadLine());
 
-        }
+        } while (startYear >= 2000 || startYear >= endYear);
+
+        Console.WriteLine("Year difference" + (endYear - startYear));
     }
 }
